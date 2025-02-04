@@ -26,6 +26,20 @@
         font-family: "Sora", serif;
       }
     </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#179800',
+              'primary-light':'#15803d',
+              'secondary': '#111111'
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -38,9 +52,21 @@
       <div class="flex items-center gap-28">
         <!-- Nav -->
         <div class="hidden lg:flex gap-8">
-          <a href="#" class="text-xl font-sora capitalize">product</a>
-          <a href="#" class="text-xl font-sora capitalize">services</a>
-          <a href="#" class="text-xl font-sora capitalize">contact us</a>
+          <a
+            href="#"
+            class="text-xl hover:text-primary-light transition font-sora capitalize"
+            >product</a
+          >
+          <a
+            href="#"
+            class="text-xl hover:text-primary-light transition font-sora capitalize"
+            >services</a
+          >
+          <a
+            href="#"
+            class="text-xl hover:text-primary-light transition font-sora capitalize"
+            >contact us</a
+          >
         </div>
         <!-- Login & Register -->
         <div class="hidden md:flex gap-3">
@@ -54,13 +80,13 @@
           </button>
           <!-- Login Button -->
           <button
-            class="px-7 py-2.5 text-xl font-sora border border-green-400 rounded-lg capitalize"
+            class="px-7 py-2.5 text-xl font-sora border border-primary hover:bg-primary hover:text-white transition rounded-lg capitalize"
           >
             login
           </button>
           <!-- Register Button -->
           <button
-            class="px-7 py-2.5 text-xl font-sora text-white bg-green-400 rounded-lg capitalize"
+            class="px-7 py-2.5 text-xl font-sora text-white bg-primary hover:bg-primary-light transition rounded-lg capitalize"
           >
             register
           </button>
