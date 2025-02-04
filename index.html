@@ -32,9 +32,9 @@
         theme: {
           extend: {
             colors: {
-              'primary': '#179800',
-              'primary-light':'#15803d',
-              'secondary': '#111111'
+              primary: "#179800",
+              "primary-light": "#15803d",
+              'secondary': "#111111",
             },
           },
         },
@@ -43,60 +43,77 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container mx-auto flex justify-between px-4 lg:px-0 py-6">
-      <!-- Logo -->
-      <a href="#">
-        <img src="./c2-assets/logo-header.png" alt="logo-header" />
-      </a>
-      <!-- Nav & Login Register container -->
-      <div class="flex items-center gap-28">
-        <!-- Nav -->
-        <div class="hidden lg:flex gap-8">
-          <a
-            href="#"
-            class="text-xl hover:text-primary-light transition font-sora capitalize"
-            >product</a
-          >
-          <a
-            href="#"
-            class="text-xl hover:text-primary-light transition font-sora capitalize"
-            >services</a
-          >
-          <a
-            href="#"
-            class="text-xl hover:text-primary-light transition font-sora capitalize"
-            >contact us</a
-          >
+    <div class="bg-gradient-to-b form-[#FFFFFF] to-[#EFEBE3]">
+      <header class="container mx-auto flex justify-between px-4 lg:px-0 py-6">
+        <!-- Logo -->
+        <a href="#">
+          <img src="./c2-assets/logo-header.png" alt="logo-header" />
+        </a>
+        <!-- Nav & Login Register container -->
+        <div class="flex items-center gap-28">
+          <!-- Nav -->
+          <div class="hidden lg:flex gap-8">
+            <a
+              href="#"
+              class="text-xl hover:text-primary-light transition font-sora capitalize"
+              >product</a
+            >
+            <a
+              href="#"
+              class="text-xl hover:text-primary-light transition font-sora capitalize"
+              >services</a
+            >
+            <a
+              href="#"
+              class="text-xl hover:text-primary-light transition font-sora capitalize"
+              >contact us</a
+            >
+          </div>
+          <!-- Login & Register -->
+          <div class="hidden md:flex gap-3">
+            <!-- Search Icon -->
+            <button class="text-2xl">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- Cart Icon -->
+            <button class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <!-- Login Button -->
+            <button
+              class="px-7 py-2.5 text-xl font-sora border border-primary hover:bg-primary hover:text-white transition rounded-lg capitalize"
+            >
+              login
+            </button>
+            <!-- Register Button -->
+            <button
+              class="px-7 py-2.5 text-xl font-sora text-white bg-primary hover:bg-primary-light transition rounded-lg capitalize"
+            >
+              register
+            </button>
+          </div>
+          <!-- Menu Icon -->
+          <button class="md:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
-        <!-- Login & Register -->
-        <div class="hidden md:flex gap-3">
-          <!-- Search Icon -->
-          <button class="text-2xl">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <!-- Cart Icon -->
-          <button class="text-2xl">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-          <!-- Login Button -->
-          <button
-            class="px-7 py-2.5 text-xl font-sora border border-primary hover:bg-primary hover:text-white transition rounded-lg capitalize"
-          >
-            login
-          </button>
-          <!-- Register Button -->
-          <button
-            class="px-7 py-2.5 text-xl font-sora text-white bg-primary hover:bg-primary-light transition rounded-lg capitalize"
-          >
-            register
-          </button>
+      </header>
+      <!-- Hero Section -->
+      <div class="container mx-auto mt-6 lg:mt-20 px-4 lg:px-0">
+        <!-- Hero Content -->
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-3xl sm:text-5xl text-secondary text-center sm:leading-snug font-semibold font-sora">Freshness <span class="text-primary">You Can</span> <br> <span class="text-primary">Count</span> On, Prices You’ll Love!</h1>
+          <p class="text-gray-500 text-center mt-4 md:mt-8">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br> staples, we’ve got you covered every day!
+          </p>
         </div>
-        <!-- Menu Icon -->
-        <button class="md:hidden text-2xl">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <!-- Hero Image -->
+        <div class="flex justify-center">
+          <img src="./c2-assets/hero-vegetables.png" alt="hero-vegetables" />
+        </div>
       </div>
-    </header>
+    </div>
     <!-- Main -->
     <main></main>
     <!-- Footer -->
