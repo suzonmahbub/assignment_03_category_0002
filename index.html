@@ -34,7 +34,8 @@
             colors: {
               primary: "#179800",
               "primary-light": "#15803d",
-              'secondary': "#111111",
+              secondary: "#111111",
+              "secondary-light": "#EFEBE3",
             },
           },
         },
@@ -43,8 +44,8 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="bg-gradient-to-b form-[#FFFFFF] to-[#EFEBE3]">
-      <header class="container mx-auto flex justify-between px-4 lg:px-0 py-6">
+    <div class="bg-gradient-to-b form-[#FFFFFF] to-bg-secondary-light">
+      <header class="container mx-auto flex justify-between px-4 xl:px-0 py-6">
         <!-- Logo -->
         <a href="#">
           <img src="./c2-assets/logo-header.png" alt="logo-header" />
@@ -102,10 +103,16 @@
       <div class="container mx-auto mt-6 lg:mt-20 px-4 lg:px-0">
         <!-- Hero Content -->
         <div class="max-w-4xl mx-auto">
-          <h1 class="text-3xl sm:text-5xl text-secondary text-center sm:leading-snug font-semibold font-sora">Freshness <span class="text-primary">You Can</span> <br> <span class="text-primary">Count</span> On, Prices You’ll Love!</h1>
+          <h1
+            class="text-3xl sm:text-5xl text-secondary text-center sm:leading-snug font-semibold font-sora"
+          >
+            Freshness <span class="text-primary">You Can</span> <br />
+            <span class="text-primary">Count</span> On, Prices You’ll Love!
+          </h1>
           <p class="text-gray-500 text-center mt-4 md:mt-8">
             Shop your daily essentials at unbeatable prices. From fresh produce
-            to pantry <br> staples, we’ve got you covered every day!
+            to pantry <br />
+            staples, we’ve got you covered every day!
           </p>
         </div>
         <!-- Hero Image -->
@@ -115,7 +122,94 @@
       </div>
     </div>
     <!-- Main -->
-    <main></main>
+    <main>
+      <!-- Service Section -->
+      <div class="container mx-auto px-4 xl:px-0 py-8 md:py-16 lg:py-36">
+        <h2 class="text-4xl text-primary font-semibold font-sora capitalize">
+          service
+        </h2>
+        <!-- Grid Layout -->
+        <div class="grid md:grid-cols-3 gap-6 mt-6 sm:mt-12">
+          <!-- Service 1 -->
+          <div
+            class="bg-secondary-light rounded-lg pt-8 px-8 md:px-4 lg:px-8 pb-11"
+          >
+            <!-- Service Image -->
+            <div
+              class="flex mx-auto justify-center items-center w-36 md:w-32 lg:w-36 h-36 md:h-32 lg:h-36 bg-white rounded-full"
+            >
+              <img
+                class="w-24 md:w-20 lg:w-24 h-24 md:h-20 lg:h-24"
+                src="./c2-assets/service.png"
+                alt="service"
+              />
+            </div>
+            <!-- Service Content -->
+            <div class="mt-6">
+              <h3
+                class="text-2xl md:text-lg lg:text-2xl text-secondary text-center font-semibold font-sora capitalize"
+              >
+                24/7 services
+              </h3>
+              <p class="text-lg sm:text-xl md:text-base lg:text-xl text-gray-500 text-center mt-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                praesentium. Voluptas minima nisi distinctio aut.
+              </p>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="bg-secondary-light rounded-lg pt-8 px-8 pb-11">
+            <!-- Service Image -->
+            <div
+              class="flex mx-auto justify-center items-center w-36 md:w-32 lg:w-36 h-36 md:h-32 lg:h-36 bg-white rounded-full"
+            >
+              <img
+                class="w-24 md:w-20 lg:w-24 h-24 md:h-20 lg:h-24"
+                src="./c2-assets/delivery.png"
+                alt="delivery"
+              />
+            </div>
+            <!-- Service Content -->
+            <div class="mt-6">
+              <h3
+                class="text-2xl md:text-lg lg:text-2xl text-secondary text-center font-semibold font-sora capitalize"
+              >
+                fast delivery
+              </h3>
+              <p class="text-lg sm:text-xl md:text-base lg:text-xl text-gray-500 text-center mt-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                praesentium. Voluptas minima nisi distinctio aut.
+              </p>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="bg-secondary-light rounded-lg pt-8 px-8 pb-11">
+            <!-- Service Image -->
+            <div
+              class="flex mx-auto justify-center items-center w-36 md:w-32 lg:w-36 h-36 md:h-32 bg-white rounded-full"
+            >
+              <img
+                class="w-24 md:w-20 lg:w-24 h-24 md:h-20 lg:h-24"
+                src="./c2-assets/healthy.png"
+                alt="healthy"
+              />
+            </div>
+            <!-- Service Content -->
+            <div class="mt-6">
+              <h3
+                class="text-2xl md:text-lg lg:text-2xl text-secondary text-center font-semibold font-sora capitalize"
+              >
+                healthy products
+              </h3>
+              <p class="text-lg sm:text-xl md:text-base lg:text-xl  text-gray-500 text-center mt-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                praesentium. Voluptas minima nisi distinctio aut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Footer -->
     <footer></footer>
   </body>
